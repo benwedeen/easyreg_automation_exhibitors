@@ -11,7 +11,7 @@ from resources.lists import *
 class Test_Automation:
     @allure.title("testing valid login credentials")
     def test_login(self):
-        pytest.skip()
+
         self.driver = webdriver.Chrome(executable_path="C:\Drivers\chromedriver_win32\chromedriver.exe")
         self.driver.get(URL)
         self.driver.find_element_by_id(username_id).send_keys(valid_email)
@@ -71,7 +71,7 @@ class Test_Automation:
             assert False
     @allure.title("testing valid menu booth path")
     def test_menu_booth(self): #checking if schedule menu opens after login
-        pytest.skip()
+
         self.driver = webdriver.Chrome(executable_path="C:\Drivers\chromedriver_win32\chromedriver.exe")
         self.driver.get(URL)
         self.driver.find_element_by_id(username_id).send_keys(valid_email)
@@ -91,7 +91,7 @@ class Test_Automation:
             assert False
     @allure.title("testing 7 menu elements are valid")
     def test_menu_elements(self):#checking for all menu drop down elements
-        pytest.skip()
+
         self.driver = webdriver.Chrome(executable_path="C:\Drivers\chromedriver_win32\chromedriver.exe")
         self.driver.get(URL)
         self.driver.find_element_by_id(username_id).send_keys(valid_email)
